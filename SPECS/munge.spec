@@ -1,6 +1,6 @@
 Name:                 munge
 Version:              0.5.13
-Release:              13%{?dist}.1
+Release:              13%{?dist}.3
 Summary:              Enables uid & gid authentication across a host cluster
 
 # The libs and devel package is GPLv3+ and LGPLv3+ where as the main package is GPLv3 only.
@@ -161,6 +161,12 @@ mv %{buildroot}%{_var}/run %{buildroot}
 
 
 %changelog
+* Tue Mar 03 2026 Jeff Uphoff <juphoff@ciq.com> - 0.5.13-13.3
+- Increment release for multilib i686 rebuild
+
+* Fri Feb 27 2026 Jeff Uphoff <juphoff@ciq.com> - 0.5.13-13.2
+- Increment release for rebuild
+
 * Tue Feb 10 2026 Jeff Uphoff <juphoff@ciq.com> - 0.5.13-13.1
 - Fix CVE-2026-25506, out-of-bounds read
 
